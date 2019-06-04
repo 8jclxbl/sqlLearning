@@ -1,0 +1,1 @@
+SELECT emp.emp_no AS emp_no,manager.emp_no AS manager_no FROM dept_emp AS emp JOIN dept_manager AS manager ON emp.dept_no = manager.dept_no AND emp.emp_no <> manager.emp_no AND manager.to_date = '9999-01-01';

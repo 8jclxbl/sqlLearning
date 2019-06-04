@@ -1,0 +1,1 @@
+SELECT dept.dept_no,dept.emp_no,max(salary) FROM dept_emp AS dept INNER JOIN salaries AS sal ON dept.emp_no = sal.emp_no AND dept.to_date = '9999-01-01' AND sal.to_date = '9999-01-01' GROUP BY dept.dept_no;
