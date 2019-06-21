@@ -1,0 +1,1 @@
+SELECT de.dept_no,dp.dept_name,ti.title,count(ti.title) AS `count` FROM (dept_emp AS de INNER JOIN departments AS dp ON de.dept_no = dp.dept_no AND de.to_date = '9999-01-01') INNER JOIN titles AS ti ON de.emp_no = ti.emp_no AND ti.to_date = '9999-01-01' GROUP BY de.dept_no, ti.title;
